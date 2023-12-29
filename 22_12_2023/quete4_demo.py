@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Charger les données depuis un fichier CSV en sautant la première ligne
-chemin_fichier_csv = '/home/lenovo/Headn/quest_python/HitBTC_BTCUSD_d.csv'
+chemin_fichier_csv = '/home/lenovo/Headn/quest_python/22_12_2023/HitBTC_BTCUSD_d.csv'
 df = pd.read_csv(chemin_fichier_csv)
 
 # Calculer le rendement quotidien en pourcentage
@@ -13,7 +13,7 @@ df['Rendement Quotidien'] = ((df['Close'] - df['Open']) / df['Open']) * 100
 df['Rendement Quotidien'] = df['Rendement Quotidien'].round(2)
 
 # Sauvegarder le DataFrame modifié dans le fichier CSV
-df.to_csv('/home/lenovo/Headn/quest_python/HitBTC_BTCUSD_d.csv', index=False)
+df.to_csv('/home/lenovo/Headn/quest_python/22_12_2023/HitBTC_BTCUSD_d.csv', index=False)
 
 # Calculer la moyenne et l'écart type des rendements
 moyenne_rendements = df['Rendement Quotidien'].mean().round(2)
