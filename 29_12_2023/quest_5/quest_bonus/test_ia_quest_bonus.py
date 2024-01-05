@@ -5,7 +5,7 @@ import cv2
 import os
 
 # Charger le modèle préalablement entraîné
-model = load_model('quest_bonus_ia_entraine.h5')
+model = load_model('quest_bonus_ia_entraine_V2.h5')
 
 # Chemin vers le dossier contenant les images à tester
 dossier_images = '/home/lenovo/Headn/quest_python/29_12_2023/quest_5/quest_bonus/dossier_img/'
